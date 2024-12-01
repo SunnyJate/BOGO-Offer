@@ -1,0 +1,170 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    width: 90%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+    text-align: center;
+    color: #ff4081;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
+.header::before,
+.header::after {
+    content: '';
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background-color: #ccc;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+.options-container {
+    margin-top: 20px;
+}
+.option {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.option input[type="radio"] {
+    margin-right: 10px;
+}
+.option label {
+    font-weight: bold;
+    color: #ff4081;
+}
+.option .discount {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.option .price {
+    float: right;
+    text-align: right;
+}
+.option .price .original-price {
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 12px;
+}
+.option .most-popular {
+    position: absolute;
+    top: -10px;
+    right: 2px; /* 1px padding from the box */
+    background-color: #ff4081;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.option .details {
+    margin-top: 10px;
+    display: none;
+}
+.option.expanded .details {
+    display: block;
+}
+.option.expanded {
+    padding-bottom: 20px;
+    border-color: #ff4081;
+    border-width: 2px;
+    background-color: #ffe6f0;
+}
+.option .details table {
+    width: 60%;
+    margin-left: 5px;
+    border-collapse: collapse;
+}
+.option .details table th {
+    padding: 5px 2px;
+    text-align: left;
+    font-weight: normal; /* Remove bold from th */
+    font-size: 12px; /* Smaller font size for th */
+}
+.option .details table td {
+    padding: 5px 2px;
+    text-align: left;
+    font-size: 14px; /* Larger font size for td */
+}
+.option .details table th:first-child, .option .details table td:first-child {
+    width: 5%;
+    text-align: right;
+}
+.option .details table th:nth-child(2), .option .details table td:nth-child(2),
+.option .details table th:nth-child(3), .option .details table td:nth-child(3) {
+    width: 20%;
+    text-align: left;
+}
+.option .details select {
+    width: 80%;
+}
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+.footer .summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.footer .free-delivery {
+    color: #ff4081;
+    font-weight: bold;
+}
+.footer .total {
+    font-weight: bold;
+}
+.footer .add-to-cart {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+.footer .powered-by {
+    color: #aaa;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: right;
+}
+.standard-price {
+    font-size: 12px;
+    margin-left: 30px;
+}
+@media (max-width: 600px) {
+    .header::before,
+    .header::after {
+        width: 20%;
+    }
+    .option .details table th:first-child, .option .details table td:first-child {
+        width: 30%;
+    }
+    .option .details table th:nth-child(2), .option .details table td:nth-child(2),
+    .option .details table th:nth-child(3), .option .details table td:nth-child(3) {
+        width: 35%;
+    }
+}

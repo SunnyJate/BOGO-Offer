@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <span>YAY! It's BOGO</span>
+      </div>
+      <div class="options-container">
+        <div class="option" id="option1">
+          <input type="radio" name="unit" id="unit1" onclick="updateTotal()" />
+          <label for="unit1">1 Unit</label>
+          <span class="discount">10% Off</span>
+          <div class="price">
+            <div>$10.00 USD</div>
+            <div class="original-price">$24.00 USD</div>
+          </div>
+          <div class="standard-price">Standard Price</div>
+          <div class="details">
+            <table>
+              <tr>
+                <th></th>
+                <th>Size</th>
+                <th>Colour</th>
+              </tr>
+              <tr>
+                <th>#1</th>
+                <td>
+                  <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>#2</th>
+                <td>
+                  <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="option" id="option2">
+          <input type="radio" name="unit" id="unit2" onclick="updateTotal()" />
+          <label for="unit2">2 Unit</label>
+          <span class="discount">20% Off</span>
+          <div class="price">
+            <div>$18.00 USD</div>
+            <div class="original-price">$24.00 USD</div>
+          </div>
+          <div class="most-popular">MOST POPULAR</div>
+          <div class="details">
+            <table>
+              <tr>
+                <th></th>
+                <th>Size</th>
+                <th>Colour</th>
+              </tr>
+              <tr>
+                <th>#1</th>
+                <td>
+                  <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>#2</th>
+                <td>
+                  <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="option" id="option3">
+          <input type="radio" name="unit" id="unit3" onclick="updateTotal()" />
+          <label for="unit3">3 Unit</label>
+          <span class="discount">30% Off</span>
+          <div class="price">
+            <div>$24.00 USD</div>
+            <div class="original-price">$24.00 USD</div>
+          </div>
+          <div class="standard-price">Standard Price</div>
+          <div class="details">
+            <table>
+              <tr>
+                <th></th>
+                <th>Size</th>
+                <th>Colour</th>
+              </tr>
+              <tr>
+                <th>#1</th>
+                <td>
+                  <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>#2</th>
+                <td>
+                  <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="summary">
+          <div class="free-delivery">Free Delivery</div>
+          <div class="total">Total : <span id="total">$0.00 USD</span></div>
+        </div>
+        <button class="add-to-cart">+ Add to Cart</button>
+        <div class="powered-by">@ Powered by Pumper</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
